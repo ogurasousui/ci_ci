@@ -8,3 +8,10 @@ func TestSayHello(t *testing.T) {
 		t.Fatalf("expected %s but got %s", expected, sayHello())
 	}
 }
+
+func TestAdd(t *testing.T) {
+	sum := add(2, 3)
+	if sum != 5 {
+		t.Fatalf("expected 5 but got %d", sum)
+	}
+}
